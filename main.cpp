@@ -14,8 +14,9 @@ int main(int argc, char* argv[]) {
     auto x = lexer->readFromScript();
     Parser* parser = new Parser(symTbl, x, fsParamMap);
     parser->fromStringToExcute();
-    delete fsParamMap;
     delete symTbl;
     delete lexer;
     delete parser;
+    delete fsParamMap;
+
 }
