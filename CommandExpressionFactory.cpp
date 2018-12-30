@@ -18,8 +18,8 @@
 
 CommandExpressionFactory:: CommandExpressionFactory(SymTbl* symTbl1, FSParamMap* fsParamMap){
     this->symTbl = symTbl1;
-    this->shuntingYard = new ShuntingYard(this->symTbl);
     this->fsParamMap1 = fsParamMap;
+    this->shuntingYard = new ShuntingYard(this->symTbl);
 }
 
 CommandExpressionFactory::~CommandExpressionFactory() {
