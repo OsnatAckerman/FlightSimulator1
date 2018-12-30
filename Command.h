@@ -12,8 +12,8 @@ using namespace std;
 
 class Command{
 public:
-    virtual void execute() = 0;
     virtual ~Command() = default;
+    virtual void execute() = 0;
 };
 
 #endif //EX3_COMMAND_H
